@@ -8,8 +8,11 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface SYAppDelegate : NSObject <NSApplicationDelegate>
+@interface SYAppDelegate : NSObject <NSApplicationDelegate> {
+    NSMutableArray *batteryInfoHistory;
+}
 
 @property (assign) IBOutlet NSWindow *window;
-
+@property (retain) NSMutableArray *batteryInfoHistory;
 @end
+

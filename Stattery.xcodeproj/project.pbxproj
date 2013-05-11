@@ -13,6 +13,8 @@
 		3303F87C173EA32100A9B954 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 3303F87A173EA32100A9B954 /* Credits.rtf */; };
 		3303F87F173EA32100A9B954 /* SYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3303F87E173EA32100A9B954 /* SYAppDelegate.m */; };
 		3303F882173EA32100A9B954 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3303F880173EA32100A9B954 /* MainMenu.xib */; };
+		331F46E8173EA3C400548CC0 /* SYBatteryInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 331F46E7173EA3C400548CC0 /* SYBatteryInfo.m */; };
+		331F46EC173EA41900548CC0 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 331F46EB173EA41900548CC0 /* IOKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,10 @@
 		3303F87D173EA32100A9B954 /* SYAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYAppDelegate.h; sourceTree = "<group>"; };
 		3303F87E173EA32100A9B954 /* SYAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYAppDelegate.m; sourceTree = "<group>"; };
 		3303F881173EA32100A9B954 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		331F46E6173EA3C400548CC0 /* SYBatteryInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYBatteryInfo.h; sourceTree = "<group>"; };
+		331F46E7173EA3C400548CC0 /* SYBatteryInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYBatteryInfo.m; sourceTree = "<group>"; };
+		331F46EA173EA3FD00548CC0 /* DebugUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DebugUtils.h; sourceTree = "<group>"; };
+		331F46EB173EA41900548CC0 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				331F46EC173EA41900548CC0 /* IOKit.framework in Frameworks */,
 				3303F86C173EA32100A9B954 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,6 +53,7 @@
 		3303F85F173EA32100A9B954 = {
 			isa = PBXGroup;
 			children = (
+				331F46EB173EA41900548CC0 /* IOKit.framework */,
 				3303F871173EA32100A9B954 /* Stattery */,
 				3303F86A173EA32100A9B954 /* Frameworks */,
 				3303F869173EA32100A9B954 /* Products */,
@@ -82,6 +90,9 @@
 		3303F871173EA32100A9B954 /* Stattery */ = {
 			isa = PBXGroup;
 			children = (
+				331F46EA173EA3FD00548CC0 /* DebugUtils.h */,
+				331F46E6173EA3C400548CC0 /* SYBatteryInfo.h */,
+				331F46E7173EA3C400548CC0 /* SYBatteryInfo.m */,
 				3303F87D173EA32100A9B954 /* SYAppDelegate.h */,
 				3303F87E173EA32100A9B954 /* SYAppDelegate.m */,
 				3303F880173EA32100A9B954 /* MainMenu.xib */,
@@ -169,6 +180,7 @@
 			files = (
 				3303F878173EA32100A9B954 /* main.m in Sources */,
 				3303F87F173EA32100A9B954 /* SYAppDelegate.m in Sources */,
+				331F46E8173EA3C400548CC0 /* SYBatteryInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +316,7 @@
 				3303F887173EA32100A9B954 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
