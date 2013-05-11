@@ -1,0 +1,311 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3303F86C173EA32100A9B954 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3303F86B173EA32100A9B954 /* Cocoa.framework */; };
+		3303F876173EA32100A9B954 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3303F874173EA32100A9B954 /* InfoPlist.strings */; };
+		3303F878173EA32100A9B954 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3303F877173EA32100A9B954 /* main.m */; };
+		3303F87C173EA32100A9B954 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 3303F87A173EA32100A9B954 /* Credits.rtf */; };
+		3303F87F173EA32100A9B954 /* SYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3303F87E173EA32100A9B954 /* SYAppDelegate.m */; };
+		3303F882173EA32100A9B954 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3303F880173EA32100A9B954 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3303F868173EA32100A9B954 /* Stattery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stattery.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3303F86B173EA32100A9B954 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		3303F86E173EA32100A9B954 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		3303F86F173EA32100A9B954 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3303F870173EA32100A9B954 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3303F873173EA32100A9B954 /* Stattery-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Stattery-Info.plist"; sourceTree = "<group>"; };
+		3303F875173EA32100A9B954 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3303F877173EA32100A9B954 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3303F879173EA32100A9B954 /* Stattery-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Stattery-Prefix.pch"; sourceTree = "<group>"; };
+		3303F87B173EA32100A9B954 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		3303F87D173EA32100A9B954 /* SYAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYAppDelegate.h; sourceTree = "<group>"; };
+		3303F87E173EA32100A9B954 /* SYAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYAppDelegate.m; sourceTree = "<group>"; };
+		3303F881173EA32100A9B954 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3303F865173EA32100A9B954 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3303F86C173EA32100A9B954 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3303F85F173EA32100A9B954 = {
+			isa = PBXGroup;
+			children = (
+				3303F871173EA32100A9B954 /* Stattery */,
+				3303F86A173EA32100A9B954 /* Frameworks */,
+				3303F869173EA32100A9B954 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3303F869173EA32100A9B954 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3303F868173EA32100A9B954 /* Stattery.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3303F86A173EA32100A9B954 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3303F86B173EA32100A9B954 /* Cocoa.framework */,
+				3303F86D173EA32100A9B954 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3303F86D173EA32100A9B954 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3303F86E173EA32100A9B954 /* AppKit.framework */,
+				3303F86F173EA32100A9B954 /* CoreData.framework */,
+				3303F870173EA32100A9B954 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		3303F871173EA32100A9B954 /* Stattery */ = {
+			isa = PBXGroup;
+			children = (
+				3303F87D173EA32100A9B954 /* SYAppDelegate.h */,
+				3303F87E173EA32100A9B954 /* SYAppDelegate.m */,
+				3303F880173EA32100A9B954 /* MainMenu.xib */,
+				3303F872173EA32100A9B954 /* Supporting Files */,
+			);
+			path = Stattery;
+			sourceTree = "<group>";
+		};
+		3303F872173EA32100A9B954 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3303F873173EA32100A9B954 /* Stattery-Info.plist */,
+				3303F874173EA32100A9B954 /* InfoPlist.strings */,
+				3303F877173EA32100A9B954 /* main.m */,
+				3303F879173EA32100A9B954 /* Stattery-Prefix.pch */,
+				3303F87A173EA32100A9B954 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3303F867173EA32100A9B954 /* Stattery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3303F885173EA32100A9B954 /* Build configuration list for PBXNativeTarget "Stattery" */;
+			buildPhases = (
+				3303F864173EA32100A9B954 /* Sources */,
+				3303F865173EA32100A9B954 /* Frameworks */,
+				3303F866173EA32100A9B954 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Stattery;
+			productName = Stattery;
+			productReference = 3303F868173EA32100A9B954 /* Stattery.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3303F860173EA32100A9B954 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SY;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Mario Schreiner";
+			};
+			buildConfigurationList = 3303F863173EA32100A9B954 /* Build configuration list for PBXProject "Stattery" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3303F85F173EA32100A9B954;
+			productRefGroup = 3303F869173EA32100A9B954 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3303F867173EA32100A9B954 /* Stattery */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3303F866173EA32100A9B954 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3303F876173EA32100A9B954 /* InfoPlist.strings in Resources */,
+				3303F87C173EA32100A9B954 /* Credits.rtf in Resources */,
+				3303F882173EA32100A9B954 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3303F864173EA32100A9B954 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3303F878173EA32100A9B954 /* main.m in Sources */,
+				3303F87F173EA32100A9B954 /* SYAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3303F874173EA32100A9B954 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3303F875173EA32100A9B954 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3303F87A173EA32100A9B954 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3303F87B173EA32100A9B954 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		3303F880173EA32100A9B954 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3303F881173EA32100A9B954 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3303F883173EA32100A9B954 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		3303F884173EA32100A9B954 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3303F886173EA32100A9B954 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Stattery/Stattery-Prefix.pch";
+				INFOPLIST_FILE = "Stattery/Stattery-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3303F887173EA32100A9B954 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Stattery/Stattery-Prefix.pch";
+				INFOPLIST_FILE = "Stattery/Stattery-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3303F863173EA32100A9B954 /* Build configuration list for PBXProject "Stattery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3303F883173EA32100A9B954 /* Debug */,
+				3303F884173EA32100A9B954 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3303F885173EA32100A9B954 /* Build configuration list for PBXNativeTarget "Stattery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3303F886173EA32100A9B954 /* Debug */,
+				3303F887173EA32100A9B954 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3303F860173EA32100A9B954 /* Project object */;
+}
