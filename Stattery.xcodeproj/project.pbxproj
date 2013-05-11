@@ -15,7 +15,47 @@
 		3303F882173EA32100A9B954 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3303F880173EA32100A9B954 /* MainMenu.xib */; };
 		331F46E8173EA3C400548CC0 /* SYBatteryInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 331F46E7173EA3C400548CC0 /* SYBatteryInfo.m */; };
 		331F46EC173EA41900548CC0 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 331F46EB173EA41900548CC0 /* IOKit.framework */; };
+		331F4702173EA53A00548CC0 /* CorePlot.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 331F46FC173EA51D00548CC0 /* CorePlot.framework */; };
+		331F4703173EA54400548CC0 /* CorePlot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 331F46FC173EA51D00548CC0 /* CorePlot.framework */; };
+		331F4705173EA54E00548CC0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 331F4704173EA54E00548CC0 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		331F46FB173EA51D00548CC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 331F46F5173EA51D00548CC0 /* CorePlot.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = CorePlot;
+		};
+		331F46FD173EA51D00548CC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 331F46F5173EA51D00548CC0 /* CorePlot.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0730F600109492D800E95162;
+			remoteInfo = UnitTests;
+		};
+		331F46FF173EA52300548CC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 331F46F5173EA51D00548CC0 /* CorePlot.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = CorePlot;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		331F4701173EA52B00548CC0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				331F4702173EA53A00548CC0 /* CorePlot.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3303F868173EA32100A9B954 /* Stattery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stattery.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -35,6 +75,8 @@
 		331F46E7173EA3C400548CC0 /* SYBatteryInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYBatteryInfo.m; sourceTree = "<group>"; };
 		331F46EA173EA3FD00548CC0 /* DebugUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DebugUtils.h; sourceTree = "<group>"; };
 		331F46EB173EA41900548CC0 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		331F46F5173EA51D00548CC0 /* CorePlot.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CorePlot.xcodeproj; path = Stattery/CorePlot/framework/CorePlot.xcodeproj; sourceTree = "<group>"; };
+		331F4704173EA54E00548CC0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,8 +84,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				331F4705173EA54E00548CC0 /* QuartzCore.framework in Frameworks */,
 				331F46EC173EA41900548CC0 /* IOKit.framework in Frameworks */,
 				3303F86C173EA32100A9B954 /* Cocoa.framework in Frameworks */,
+				331F4703173EA54400548CC0 /* CorePlot.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +97,8 @@
 		3303F85F173EA32100A9B954 = {
 			isa = PBXGroup;
 			children = (
+				331F4704173EA54E00548CC0 /* QuartzCore.framework */,
+				331F46F5173EA51D00548CC0 /* CorePlot.xcodeproj */,
 				331F46EB173EA41900548CC0 /* IOKit.framework */,
 				3303F871173EA32100A9B954 /* Stattery */,
 				3303F86A173EA32100A9B954 /* Frameworks */,
@@ -113,6 +159,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		331F46F6173EA51D00548CC0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				331F46FC173EA51D00548CC0 /* CorePlot.framework */,
+				331F46FE173EA51D00548CC0 /* UnitTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -123,10 +178,12 @@
 				3303F864173EA32100A9B954 /* Sources */,
 				3303F865173EA32100A9B954 /* Frameworks */,
 				3303F866173EA32100A9B954 /* Resources */,
+				331F4701173EA52B00548CC0 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				331F4700173EA52300548CC0 /* PBXTargetDependency */,
 			);
 			name = Stattery;
 			productName = Stattery;
@@ -153,12 +210,35 @@
 			mainGroup = 3303F85F173EA32100A9B954;
 			productRefGroup = 3303F869173EA32100A9B954 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 331F46F6173EA51D00548CC0 /* Products */;
+					ProjectRef = 331F46F5173EA51D00548CC0 /* CorePlot.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				3303F867173EA32100A9B954 /* Stattery */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		331F46FC173EA51D00548CC0 /* CorePlot.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CorePlot.framework;
+			remoteRef = 331F46FB173EA51D00548CC0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		331F46FE173EA51D00548CC0 /* UnitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UnitTests.octest;
+			remoteRef = 331F46FD173EA51D00548CC0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		3303F866173EA32100A9B954 /* Resources */ = {
@@ -185,6 +265,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		331F4700173EA52300548CC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CorePlot;
+			targetProxy = 331F46FF173EA52300548CC0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3303F874173EA32100A9B954 /* InfoPlist.strings */ = {
